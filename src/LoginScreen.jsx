@@ -79,7 +79,7 @@ const LoginScreen = () => {
       <TouchableOpacity onPress={handleregister}>
         <Text style={styles.bottomtext}>
           Don't have an acount?
-          <Text style={{textDecorationLine: 'underline'}}> Create</Text>
+          <Text style={{textDecorationLine: 'underline'}}> create</Text>
         </Text>
       </TouchableOpacity>
 
