@@ -27,7 +27,7 @@ const SignUpScreen = () => {
         />
       </View>
       <View>
-        <Text style={styles.Text}>Createaa Acount</Text>
+        <Text style={styles.Text}>Create Acount</Text>
       </View>
       <View style={styles.Inputconatiner}>
         <FontAwesome

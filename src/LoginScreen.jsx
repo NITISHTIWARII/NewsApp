@@ -64,7 +64,7 @@ const LoginScreen = () => {
         Forgot your password
       </Text>
       <View style={styles.SignInButton}>
-        <Text style={styles.signINtext}>Sign IN</Text>
+        <Text style={styles.signINtext}>Signs IN</Text>
         <LinearGradient
           colors={['#B210FF', '#EECE13']}
           style={styles.linearGradient}>
