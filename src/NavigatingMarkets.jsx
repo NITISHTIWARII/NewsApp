@@ -1,6 +1,5 @@
-
-import { SafeAreaView, StatusBar, StyleSheet, Text, View, TextInput } from 'react-native'
-import React from 'react'
+import { SafeAreaView, StatusBar, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MarketIndicesContent from './MarketIndicesContent';
@@ -9,10 +8,13 @@ const NavigatingMarkets = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#1C2699" barStyle="light-content" />
-    
+      
       {/* Header Section */}
       <View style={styles.headerContainer}>
         <View style={styles.headerRow}>
+          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+            <Ionicons name="arrow-back" size={24} color="#FCBA37" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>Navigating Markets</Text>
           <Ionicons
             name="notifications-outline"
@@ -20,7 +22,7 @@ const NavigatingMarkets = () => {
             color="#FCBA37"
           />
         </View>
-      
+        
         {/* Search Box */}
         <View style={styles.searchContainer}>
           <View style={styles.searchBox}>
@@ -47,10 +49,10 @@ const NavigatingMarkets = () => {
       
       <MarketIndicesContent/>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default NavigatingMarkets
+export default NavigatingMarkets;
 
 const styles = StyleSheet.create({
   container: {
@@ -68,6 +70,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 10,
     marginBottom: 12,
+  },
+  backButton: {
+    padding: 5,
   },
   headerText: {
     fontSize: 20,
@@ -102,4 +107,4 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 16,
   }
-})
+});
