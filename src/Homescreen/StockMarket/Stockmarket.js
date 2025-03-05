@@ -2,9 +2,9 @@ import { SafeAreaView, StatusBar, StyleSheet, Text, View, TextInput, TouchableOp
 import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import MarketIndicesContent from './MarketIndicesContent';
+import MarketIndicesContent from './MarketContents';
 
-const NavigatingMarkets = () => {
+const StockMarket = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#1C2699" barStyle="light-content" />
@@ -52,7 +52,7 @@ const NavigatingMarkets = () => {
   );
 };
 
-export default NavigatingMarkets;
+
 
 const styles = StyleSheet.create({
   container: {
@@ -108,3 +108,5 @@ const styles = StyleSheet.create({
     paddingTop: 16,
   }
 });
+
+export default StockMarket;

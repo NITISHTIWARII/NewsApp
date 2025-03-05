@@ -12,7 +12,7 @@ const preferences = [
   },
 ];
 
-const PreferenceSelectionScreen = () => {
+const SelectPreference = () => {
   const [selectedPreferences, setSelectedPreferences] = useState([]);
 
   const toggleSelection = (item) => {
@@ -113,4 +113,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PreferenceSelectionScreen;
+export default SelectPreference;

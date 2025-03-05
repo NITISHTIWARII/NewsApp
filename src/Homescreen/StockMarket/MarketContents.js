@@ -3,7 +3,7 @@ import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const MarketIndicesContent = () => {
+const MarketContents = () => {
   return (
     <ScrollView style={styles.container}>
       {/* Back button and title */}
@@ -112,34 +112,12 @@ const MarketIndicesContent = () => {
         <Text style={styles.loadMoreText}>Load More</Text>
       </TouchableOpacity>
 
-      {/* Bottom Navigation */}
-      <View style={styles.bottomNavigation}>
-        <TouchableOpacity style={styles.navItem}>
-          <Ionicons name="home" size={24} color="#000" />
-          <Text style={styles.navText}>Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
-          <Ionicons name="videocam" size={24} color="#000" />
-          <Text style={styles.navText}>Videos</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
-          <Ionicons name="compass" size={24} color="#000" />
-          <Text style={styles.navText}>Explore</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
-          <Ionicons name="bookmark" size={24} color="#000" />
-          <Text style={styles.navText}>Saved</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
-          <Ionicons name="person" size={24} color="#000" />
-          <Text style={styles.navText}>Profile</Text>
-        </TouchableOpacity>
-      </View>
+      
     </ScrollView>
   );
 };
 
-export default MarketIndicesContent;
+
 
 const styles = StyleSheet.create({
   container: {
@@ -242,3 +220,5 @@ const styles = StyleSheet.create({
     color: '#666',
   },
 });
+
+export default MarketContents;

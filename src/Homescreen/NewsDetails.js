@@ -3,14 +3,14 @@ import { View, Text, Image, StyleSheet, ScrollView, TouchableOpacity } from 'rea
 
 import  FontAwesome from 'react-native-vector-icons/FontAwesome'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import { deviceWidth } from './Constants';
-const NewsArticleScreen = () => {
+import { deviceWidth } from '../Constants';
+const NewsDetailsScreen = () => {
   return (
     <ScrollView style={styles.container}>
       {/* Header Image with Overlay Title */}
       <View style={styles.imageContainer}>
         <Image
-          source={require('../src/assets/image.png')}
+         // source={require('../src/assets/image.png')}
           style={styles.image}
         />
         <View style={styles.overlay}>
@@ -132,4 +132,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NewsArticleScreen;
+export default NewsDetailsScreen;

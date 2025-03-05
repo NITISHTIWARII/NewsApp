@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 
-const FilterScreen = () => {
+const SelectFilter = () => {
   const [selectedCities, setSelectedCities] = useState([]);
   const [selectedPreferences, setSelectedPreferences] = useState([]);
 
@@ -126,4 +126,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FilterScreen;
+export default SelectFilter;

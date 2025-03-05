@@ -1,8 +1,8 @@
-// // Dimensions
-// import { Dimensions } from "react-native";
+// Dimensions
+import { Dimensions } from "react-native";
 
-// export const deviceHeight = Dimensions.get('window').height
-// export const deviceWidth = Dimensions.get('window').width
+export const deviceHeight = Dimensions.get('window').height
+export const deviceWidth = Dimensions.get('window').width
 
 // import React, { useState } from 'react';
 // import { SafeAreaView, View, Text, Image, StyleSheet, ScrollView, TouchableOpacity, StatusBar, TextInput } from 'react-native';

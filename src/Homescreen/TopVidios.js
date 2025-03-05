@@ -1,15 +1,16 @@
 
 import React, { useState } from 'react';
 import { SafeAreaView, View, Text, Image, StyleSheet, ScrollView, TouchableOpacity, StatusBar, TextInput } from 'react-native';
-
+import { useNavigation } from "@react-navigation/native";
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import { deviceWidth } from './Constants';
+import { deviceWidth } from '../Constants';
 
-const NewsApp = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  
+const TopVidios = () => {
+  const [searchQuery, setSearchQuery] = useState('');                               
+  const navigation = useNavigation();
+
   const newsItems = [
     {
       id: 1,
@@ -248,4 +249,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NewsApp;
+export default TopVidios;
